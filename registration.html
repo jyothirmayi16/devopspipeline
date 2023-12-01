@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration</title>
+</head>
+<body>
+
+    <main>
+        <form action="process_registration.php" method="post">
+            <h2>Student Registration</h2>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="campus">Campus:</label>
+            <select id="campus" name="campus" required>
+                <option value="regina">Regina</option>
+                <option value="prince_albert">Prince Albert</option>
+                <option value="saskatoon">Saskatoon</option>
+                <option value="moose_jaw">Moose Jaw</option>
+            </select>
+
+            <label for="student_type">Student Type:</label>
+            <input type="radio" id="domestic" name="student_type" value="domestic" checked>
+            <label for="domestic">Domestic</label>
+            <input type="radio" id="international" name="student_type" value="international">
+            <label for="international">International</label>
+
+            <button type="submit">Register</button>
+            <a href="index.html">Back to Home</a>
+        </form>
+    </main>
+
+</body>
+</html>
